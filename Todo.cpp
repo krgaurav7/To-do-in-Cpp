@@ -81,7 +81,7 @@ int main()
                 time_t now_time = system_clock::to_time_t(now); // convert to time t
                 cout << "Add a Todo fo Today " << put_time(localtime(&now_time), "%Y-%m-%d %H:%M:%S") <<endl;
             } 
-
+            cout << " " << endl;
             cout << "Enter a for add a New Todo !" <<endl;
             cout << "Enter c for complete a TOdo !" <<endl;
             cout <<  "Enter q for quit " << endl;
@@ -89,6 +89,7 @@ int main()
             cout << "Choice : ";
 
             cin >> input_Option;
+            cout << " " << endl;
 
             if(input_Option == 'q')
             {
